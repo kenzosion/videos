@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+import SearchBar from './SearchBar';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        
+      <div >
+        <SearchBar />
       </div>
     );
   }
