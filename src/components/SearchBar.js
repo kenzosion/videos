@@ -9,17 +9,20 @@ export default class SearchBar extends Component {
     this.setState({ term: event.target.value })
   }
 
-  
+  onFormSubmit = (event) => {
+    event.preventDefault();
+    this.props.onSubmit(this.state.term);
+  }
 
   render() {
     return (
       <div className="ui inverted segment">
-        <div className="ui form">
+        <form className="ui form" onSubmit={}>
           <div className="field">
             <label style={{ color : 'white'}}>Video search</label>
             <input type="text" placeholder="Search" value={this.state.term} onChange={this.onInputChange}/>
           </div>
-        </div>
+        </form>
       </div>
     )
   }
