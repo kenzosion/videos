@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 class App extends Component {
   render() {
     return (
-      <h1>
+      <h1 className="ui container" style={{marginTop: '20px'}}>
         <SearchBar />
       </h1>
     );
