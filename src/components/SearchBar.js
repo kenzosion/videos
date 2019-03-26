@@ -16,8 +16,8 @@ export default class SearchBar extends Component {
 
   render() {
     return (
-      <div className="ui inverted segment">
-        <form className="ui form" onSubmit={}>
+      <div className="ui inverted segment search-bar">
+        <form className="ui form" onSubmit={this.onFormSubmit}>
           <div className="field">
             <label style={{ color : 'white'}}>Video search</label>
             <input type="text" placeholder="Search" value={this.state.term} onChange={this.onInputChange}/>
